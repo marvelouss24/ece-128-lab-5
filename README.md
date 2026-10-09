@@ -1,2 +1,7 @@
 # ece-128-lab-5
-ECE 128 Lab 4. Design and Implementation of various sequential circuits in Verilog using Vivado.
+ECE 128 Lab 5. Design and Implementation of various sequential circuits in Verilog using Vivado.
+
+### Project Description
+
+### Instructions
+There are 4 design files. One for an SR latch and SR flip-flop, one for a synchronous flip-flop and asynchronous flip-flop, one for a 3-bit counter made of 3 T flip flops, and one for a clock divider made of 2 T flip-flops. Both the SR latch and flip-flop use structural modeling in order to create equations for Q and Qnot. Both D flip-flops use behavioral modeling with a clk to create Q, the difference being that the reset for the synchronous one can only be in affect on the positive edge of the clock while the asynchronous reset can be activated at any point. The 3-bit counter uses a module to create the T flip-flops behaviorally with an asynchronous reset. The 3-bit counter is implemented structurally by instantiating the 3 T-flip flops with the last one using Q0 and Q1 anded together for its input. Finally, the clock divider uses a module to create the T flip-flops the same way the counter does. The clock divider is implemented structurally by instantiating the 2 T-flip flops with the second one using Q0 for its clock. There are 5 test bench files. One for the SR latch, one for the SR flip-flop, one for the D flip-flops, one for the 3-bit counter, and one for the clock divider. In order to simulate the waveforms for the various different sequential circuits, you instantiated the module from the design file with the corresponding test bench. The one for the D flip-flops can use either the synchronous or asynchronous modules. 
